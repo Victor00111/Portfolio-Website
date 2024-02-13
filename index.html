@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <canvas id="canvas1"></canvas>
+        <script src="javaScript/animation.js"></script>
+    </section>
+
+    <section id="about">
+        <div class="about">
+            <div class="image">
+                <img src="resources/selfie.jpg" alt="Image of Me (Victor Tung)">
+            </div>
+            <div class="text">
+                <h3>My name is Victor Tung and I'm currently a Junior studying Computer Science at the 
+                    University of Delaware. Besides coding, my interests include PC hardware, investing 
+                    and gaming. I am a quick learner who is detail-oriented and loves solving problems. 
+                    My aim is to become a Software Engineer in the near future, hopefully in the tech
+                    or fintech sector.</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="projectTypeButtons">
+            <h2>Projects: </h2>
+            <button id="personalButton" class="button">Personal</button>
+            <button id="schoolButton" class="button">School-based</button>
+        </div>
+    
+        <div id="personalProjects">
+            <div class="project">
+                <div class="image">
+                    <img src="resources/pathfinding_visualizer.PNG" alt="Image of pathfinding visualizer">
+                </div>
+                <div class="text">
+                    <h2>Pathfinding Visualizer</h2>
+                    <p>Pathfinding visualizer project featuring both weighted and unweighted 
+                        graphs. Currently, BFS and Dijkstra are the only algorithms that have 
+                        been implemented. I built this project mainly as a way to learn more 
+                        about JavaScipt and React and because I simply thought that pathfinding 
+                        algorithms were cool.</p>
+                        <a target="_blank" href="https://victor00111.github.io/pathfinding-visualizer/">Click to View</a>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="image">
+                    <img src="resources/sudokupuzzle.PNG" alt="Image of Sudoku interface">
+                </div>
+                <div class="text">
+                    <h2>Sudoku Interface/Solver</h2>
+                    <p>Interactive Sudoku interface where you can solve a random puzzle or input 
+                        your own puzzle to solve. There is also a solver utilizing the 
+                        backtracking algorithm that lets you know if your solution is correct 
+                        and with which you can use to solve the puzzle. Built using Python
+                        and the Pygame library.</p>
+                    <a target="_blank" href="https://github.com/Victor00111/Sudoku-Solver">Click to View</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="schoolProjects" style="display:none;">
+            <div class="project">
+                <div class="image">
+                    <img src="resources/PCMart.JPG" alt="Image of PCMart website">
+                </div>
+                <div class="text">
+                    <h2>PCMart</h2>
+                    <p>This was a project that I worked on in collaboration with others for 
+                        CISC275. It is an e-commerce website for PC parts built using 
+                        TypeScript, JavaScript, and React. Currently, the project is 
+                        almost entirely frontend, with a little bit of firebase for the 
+                        backend. The project was built over the course of ~6 weeks with 
+                        an agile methodology via 1-week sprints.</p>
+                    <a target="_blank" href="https://victor00111.github.io/PCMart-website">Click to View</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="image">
+                    <img src="resources/SnakeGame.JPG" alt="Image of Snake Game">
+                </div>
+                <div class="text">
+                    <h2>Snake Game</h2>
+                    <p>Game of snake that was built using Python and the Designer Library.
+                        I built this as my final coding project when I was a Freshman.
+                    </p>
+                    <a target="_blank" href="https://github.com/Victor00111/Snake-Game">Click to View</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="info">
+            <h2>Contact Info</h2>
+            <div class="icons">
+                <a target="_blank" href="https://github.com/Victor00111"><img src="resources/GithubIcon.png">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/victortung99/"><img src="resources/LinkedinIcon.png">LinkedIn</a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:vtung@udel.edu"><img src="resources/GmailIcon.png">Email</a>
+                <a target="_blank" href="https://www.facebook.com/victor.tung.35"><img src="resources/FacebookIcon.png">Facebook</a>
+            </div>
+            <div class="text">
+                <p>Email and LinkedIn are my preferred methods of contact. Feel free to
+                    browse through my GitHub and my socials (though I don't really use 
+                    social media). If you'd like a copy of my resume, you can download it below.
+                </p>
+            </div>
+            <div class="resume">
+                <a target="_blank" href="V. Tung - Resume.pdf"><img src="resources/ResumeIcon.png">Download V. Tung - Resume.pdf</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Victor Tung. All rights reserved.</p>
+    </footer>
+    
+    <script src="javaScript/scroll.js"></script>
+    <script src="javaScript/projectType.js"></script>
+
+</body>
+</html>
